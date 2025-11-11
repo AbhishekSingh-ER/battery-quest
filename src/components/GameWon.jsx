@@ -10,7 +10,7 @@ const GameWon = ({ stars, chargersPlaced, optimalChargers, onNextLevel, onLevelS
           <h1 className="result-title">Level Complete!</h1>
           <p className="result-message">You earned {stars} {stars === 1 ? 'star' : 'stars'}!</p>
           <p style={{ color: '#666', marginBottom: '30px' }}>
-            Chargers placed: {chargersPlaced} (Optimal: {optimalChargers})
+            Chargers placed: {chargersPlaced} 
           </p>
 
           <div className="stars-container">

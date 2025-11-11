@@ -275,13 +275,6 @@ const GameBoard = ({
               🏠 Menu
             </button>
 
-            <button 
-              className="game-button game-button-danger"
-              onClick={onExitLevel}
-            >
-              🚪 Exit Level
-            </button>
-
             {gameState === 'SETUP' && (
               <>
                 <button 
@@ -324,7 +317,12 @@ const GameBoard = ({
             >
               ⏸️ Pause
             </button>
-
+            <button 
+              className="game-button game-button-danger"
+              onClick={onExitLevel}
+            >
+              🚪 Exit Level
+            </button>
             <div className="sidebar-section">
               <h3>⚡ Charger Stats</h3>
               <div className="stats-grid">
@@ -336,10 +334,10 @@ const GameBoard = ({
                   <span>Used:</span>
                   <span>{chargersUsed} times</span>
                 </div>
-                <div className="stat-item">
+                {/* <div className="stat-item">
                   <span>Optimal:</span>
                   <span>{levelData.optimalChargers}</span>
-                </div>
+                </div> */}
                 <div className="stat-item">
                   <span>Maximum:</span>
                   <span>{levelData.maxChargers}</span>
